@@ -12,11 +12,14 @@ pageextension 60000 CustomerCardExt extends "Customer Card"
 
                 trigger OnAction()
                 var
+                    GenLedgerSetup: Record "General Ledger Setup";
                     TotalCapital: Decimal;
                     CalcDuration: Integer;
                     I: Integer;
                     Text60000: Label 'Total amount: %2 MW';
                 begin
+                    GenLedgerSetup.Get();
+
                     TotalCapital := Rec."Credit Limit (LCY)";
                     CalcDuration := 10;
 
@@ -26,6 +29,8 @@ pageextension 60000 CustomerCardExt extends "Customer Card"
                         else
                             TotalCapital := Round(TotalCapital * 1.04);
                     end;
+
+                    Message(Text60000, Format(Round(TotalCapital, GenLedgerSetup."Amount Rounding Precision")));
                 end;
             }
         }
