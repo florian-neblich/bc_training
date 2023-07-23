@@ -23,13 +23,10 @@ pageextension 60000 CustomerCardExt extends "Customer Card"
 
                     TotalCapital := Rec."Credit Limit (LCY)";
 
-                    DurationYears[1] := 5;
-                    DurationYears[2] := 5;
+                    InterestMgt.AddStep(5, 3.0);
+                    InterestMgt.AddStep(5, 4.0);
 
-                    InterestPercent[1] := 3.0;
-                    InterestPercent[2] := 4.0;
-
-                    TotalCapital := InterestMgt.CalcInterestWithArray(TotalCapital, DurationYears, InterestPercent);
+                    TotalCapital := InterestMgt.CalcSteps(TotalCapital);
 
                     Message(Text60000, Format(Round(TotalCapital, GenLedgerSetup."Amount Rounding Precision")));
                 end;
