@@ -1,0 +1,35 @@
+{
+  "id": "76e123b6-d77f-4c0d-8592-c33fa89ba6ca",
+  "name": "BC-Schulung FLN",
+  "publisher": "dc AG",
+  "version": "23.1.0.1",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "https://www.dc.ag/en/appsource/dataprotection/",
+  "EULA": "https://www.dc.ag/en/appsource/eula/",
+  "help": "https://docs.dc.ag/",
+  "contextSensitiveHelpUrl": "https://docs.dc.ag/",
+  "url": "https://docs.dc.ag/",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "21.0.0.0",
+  "target": "Cloud",
+  "idRanges": [
+    {
+      "from": 60000,
+      "to": 60200
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "10.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ]
+}

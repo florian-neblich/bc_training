@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "FLN Sandbox",
+            "request": "launch",
+            "type": "al",
+            "server": "http://localhost",
+            "environmentType": "Sandbox",
+            "environmentName": "BC220",
+            "breakOnError": "All",
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true
+        }
+    ]
+}
