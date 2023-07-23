@@ -13,22 +13,18 @@ pageextension 60000 CustomerCardExt extends "Customer Card"
                 trigger OnAction()
                 var
                     GenLedgerSetup: Record "General Ledger Setup";
+                    InterestMgt: Codeunit "Interest Mgt";
                     TotalCapital: Decimal;
-                    CalcDuration: Integer;
-                    I: Integer;
+                    DurationYears: array[2] of Integer;
+                    InterestPercent: array[2] of Decimal;
                     Text60000: Label 'Total amount: %2 MW';
                 begin
                     GenLedgerSetup.Get();
 
                     TotalCapital := Rec."Credit Limit (LCY)";
-                    CalcDuration := 10;
 
-                    for I := 1 TO CalcDuration do begin
-                        if I <= 5 then
-                            TotalCapital := Round(TotalCapital * 1.03)
-                        else
-                            TotalCapital := Round(TotalCapital * 1.04);
-                    end;
+                    TotalCapital := InterestMgt.CalcInterest(TotalCapital, 5, 3.0);
+                    TotalCapital := InterestMgt.CalcInterest(TotalCapital, 5, 4.0);
 
                     Message(Text60000, Format(Round(TotalCapital, GenLedgerSetup."Amount Rounding Precision")));
                 end;
