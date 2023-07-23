@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="BC-Schulung FLN">
+    <body>
+      <group id="body">
+        <trans-unit id="PageExtension 1496902179 - Action 3878267696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Calc. Total Capital</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CustomerCardExt - Action CalculateTotalCapital - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1496902179 - Action 3878267696 - Method 1377591017 - NamedType 922029781" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 1496902179">
+          <source>Total amount: %2 MW</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CustomerCardExt - Action CalculateTotalCapital - Method OnAction - NamedType Text60000</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
