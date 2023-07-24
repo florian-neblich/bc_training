@@ -21,4 +21,14 @@ page 60003 "Interest Calc. Setup"
             }
         }
     }
+
+    trigger OnOpenPage()
+    begin
+        Rec.Reset();
+
+        if not Rec.Get() then begin
+            Rec.Init();
+            Rec.Insert();
+        end;
+    end;
 }
