@@ -3,6 +3,12 @@
   <file datatype="xml" source-language="en-US" target-language="de-DE" original="BC-Schulung FLN.g.xlf">
     <body>
       <group id="body">
+        <trans-unit id="Codeunit 930276948 - Method 1384013020 - NamedType 230654827" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unequal count of parameters!</source>
+          <target>Ungleiche Anzahl an Parametern!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Interest Mgt - Method CalcInterestWithArray - NamedType Error001</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1496902179 - Action 3878267696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
           <source>Calc. Total Capital</source>
           <target>Gesamtkapital berechnen</target>
@@ -10,7 +16,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension CustomerCardExt - Action CalculateTotalCapital - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1496902179 - Action 3878267696 - Method 1377591017 - NamedType 922029781" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 1496902179">
-          <source>Total amount: %2 MW</source>
+          <source>Total amount: %1 MW</source>
           <target>Das Gesamtkapital beträgt: %1 MW</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension CustomerCardExt - Action CalculateTotalCapital - Method OnAction - NamedType Text60000</note>

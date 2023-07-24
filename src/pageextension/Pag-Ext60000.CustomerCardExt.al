@@ -17,7 +17,7 @@ pageextension 60000 CustomerCardExt extends "Customer Card"
                     TotalCapital: Decimal;
                     DurationYears: array[2] of Integer;
                     InterestPercent: array[2] of Decimal;
-                    Text60000: Label 'Total amount: %2 MW';
+                    Text60000: Label 'Total amount: %1 MW';
                 begin
                     GenLedgerSetup.Get();
 
