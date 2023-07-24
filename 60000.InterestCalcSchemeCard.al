@@ -5,6 +5,7 @@ page 60000 "Interest Calc. Scheme Card"
     SourceTable = "Interest Calc. Scheme";
     DataCaptionFields = Code, Description;
     Caption = 'Interest Calc. Scheme Card';
+    RefreshOnActivate = true;
 
     layout
     {

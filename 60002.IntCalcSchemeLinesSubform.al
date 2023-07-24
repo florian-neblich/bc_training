@@ -16,6 +16,11 @@ page 60002 "Int.Calc. Scheme Lines Subform"
                 field("Duration Years"; Rec."Duration Years")
                 {
                     ApplicationArea = All;
+
+                    trigger OnValidate()
+                    begin
+                        CurrPage.Update();
+                    end;
                 }
                 field("Interest Percent"; Rec."Interest Percent")
                 {
@@ -24,4 +29,9 @@ page 60002 "Int.Calc. Scheme Lines Subform"
             }
         }
     }
+
+    trigger OnDeleteRecord(): Boolean
+    begin
+        CurrPage.Update();
+    end;
 }
