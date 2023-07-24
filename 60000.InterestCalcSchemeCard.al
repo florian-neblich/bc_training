@@ -56,6 +56,7 @@ page 60000 "Interest Calc. Scheme Card"
             {
                 Caption = 'Lines';
                 SubPageLink = "Interest Calc. Scheme Code" = field(Code);
+                UpdatePropagation = Both;
             }
             group(Invoice)
             {
