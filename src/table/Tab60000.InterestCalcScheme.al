@@ -73,6 +73,13 @@ table 60000 "Interest Calc. Scheme"
             FieldClass = FlowField;
             CalcFormula = sum("Interest Calc. Scheme Line"."Duration Years" where("Interest Calc. Scheme Code" = field(Code)));
         }
+        field(20; "Comment"; Boolean)
+        {
+            Caption = 'Comment';
+            FieldClass = FlowField;
+            CalcFormula = exist("Comment Line" where("Table Name" = const("Interest Calc. Scheme"), "No." = field(Code)));
+            Editable = false;
+        }
     }
 
     keys
@@ -93,6 +100,10 @@ table 60000 "Interest Calc. Scheme"
     var
         InterestCalcSchemeLine: Record "Interest Calc. Scheme Line";
     begin
+        CommentLine.SetRange("Table Name", CommentLine."Table Name"::"Interest Calc. Scheme");
+        CommentLine.SetRange("No.", Code);
+        CommentLine.DeleteAll();
+
         InterestCalcSchemeLine.SetRange("Interest Calc. Scheme Code", Rec.Code);
         InterestCalcSchemeLine.DeleteAll();
     end;
@@ -122,6 +133,7 @@ table 60000 "Interest Calc. Scheme"
     end;
 
     var
+        CommentLine: Record "Comment Line";
         Text000: Label 'must not be greater than %1!';
         Text001: Label 'must not be less than %1!';
         Text002: Label 'The Amound is not within the range of allowed amounts %1..%2';

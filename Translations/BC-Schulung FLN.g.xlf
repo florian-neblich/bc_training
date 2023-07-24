@@ -38,6 +38,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field Code - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3271052804 - Field 2790486453 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Comment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field Comment - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3271052804 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -133,6 +138,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Scheme Card - Action Interest Calc. Scheme - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1966328496 - Action 2790486453 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Comments</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Scheme Card - Action Comment - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 4211251551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Interest Calc. Scheme Lines</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -148,6 +158,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Scheme List - Action Interest Calc. Scheme - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1314319254 - Action 2790486453 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Comments</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Scheme List - Action Comment - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1496902179 - Action 3878267696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
           <source>Calc. Total Capital</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -157,6 +172,11 @@
           <source>Total amount: %1 MW</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension CustomerCardExt - Action CalculateTotalCapital - Method OnAction - NamedType Text60000</note>
+        </trans-unit>
+        <trans-unit id="EnumExtension 688090277 - EnumValue 3271052804 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 2592783624">
+          <source>Interest Calc. Scheme</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">EnumExtension Comment Line Table Name Ext. - EnumValue Interest Calc. Scheme - Property Caption</note>
         </trans-unit>
       </group>
     </body>

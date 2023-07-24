@@ -91,6 +91,14 @@ page 60000 "Interest Calc. Scheme Card"
                     RunObject = page "Interest Calc. Scheme Lines";
                     RunPageLink = "Interest Calc. Scheme Code" = field(Code);
                 }
+                action(Comment)
+                {
+                    Caption = 'Comments';
+                    ApplicationArea = All;
+                    Image = ViewComments;
+                    RunObject = page "Comment Sheet";
+                    RunPageLink = "Table Name" = const("Interest Calc. Scheme"), "No." = field(Code);
+                }
             }
         }
     }
