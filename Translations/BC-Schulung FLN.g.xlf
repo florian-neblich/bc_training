@@ -98,6 +98,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme Line - Field Line No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 4279276614 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Calc. Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4279276614 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Setup - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4279276614 - Field 1987066414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Round. Precision</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Setup - Field Interest Rounding Precision - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Codeunit 930276948 - Method 2469324726 - NamedType 230654827" size-unit="char" translate="yes" xml:space="preserve">
           <source>Unequal count of parameters!</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -162,6 +177,16 @@
           <source>Comments</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Scheme List - Action Comment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4279276614 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Calc. Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4279276614 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Setup - Control General - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1496902179 - Action 3878267696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
           <source>Calc. Total Capital</source>
