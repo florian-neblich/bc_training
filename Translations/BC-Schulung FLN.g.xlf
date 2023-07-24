@@ -103,6 +103,51 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Interest Mgt - Method CalcInterestWithArray - NamedType Error001</note>
         </trans-unit>
+        <trans-unit id="Page 175029704 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Calc. Scheme Line</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Int.Calc. Scheme Lines Subform - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1966328496 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Calc. Scheme Card</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Scheme Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1966328496 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Scheme Card - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1966328496 - Control 175029704 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Scheme Card - Control Int.Calc. Scheme Lines Subform - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1966328496 - Control 821689635 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Scheme Card - Control Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1966328496 - Action 3271052804 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Calc. Scheme</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Scheme Card - Action Interest Calc. Scheme - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4211251551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Calc. Scheme Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Scheme Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1314319254 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Calc. Scheme List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Scheme List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1314319254 - Action 3271052804 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Calc. Scheme</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Scheme List - Action Interest Calc. Scheme - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1496902179 - Action 3878267696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
           <source>Calc. Total Capital</source>
           <note from="Developer" annotates="general" priority="2"></note>
