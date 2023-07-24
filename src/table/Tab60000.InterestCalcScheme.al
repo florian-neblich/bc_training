@@ -67,6 +67,12 @@ table 60000 "Interest Calc. Scheme"
                     FieldError("Valid To", StrSubstNo(Text001, FieldCaption("Valid From")));
             end;
         }
+        field(17; "Total Duration Years"; Decimal)
+        {
+            Caption = 'Total Duration Years';
+            FieldClass = FlowField;
+            CalcFormula = sum("Interest Calc. Scheme Line"."Duration Years" where("Interest Calc. Scheme Code" = field(Code)));
+        }
     }
 
     keys

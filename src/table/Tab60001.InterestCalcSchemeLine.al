@@ -12,7 +12,7 @@ table 60001 "Interest Calc. Scheme Line"
         {
             Caption = 'Line No.';
         }
-        field(10; "Duration Years"; Integer)
+        field(10; "Duration Years"; Decimal)
         {
             Caption = 'Duration Years';
         }

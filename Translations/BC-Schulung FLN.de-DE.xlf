@@ -70,6 +70,12 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field Search Description - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3271052804 - Field 3599362020 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Duration Years</source>
+          <target>Summe Laufzeit (Jahre)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field Total Duration Years - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3271052804 - Field 1771795884 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Valid From</source>
           <target>Gültigkeit ab</target>
