@@ -19,7 +19,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension CustomerCardExt - Action CalculateTotalCapital - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1496902179 - Action 3878267696 - Method 1377591017 - NamedType 922029781" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 1496902179">
-          <source>Total amount: %2 MW</source>
+          <source>Total amount: %1 MW</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension CustomerCardExt - Action CalculateTotalCapital - Method OnAction - NamedType Text60000</note>
         </trans-unit>
