@@ -13,7 +13,7 @@ page 60001 "Interest Calc. Scheme List"
         {
             repeater(Group)
             {
-                field(Code; Rec.Code)
+                field(Code; Rec."No.")
                 {
                     ApplicationArea = All;
                 }
@@ -71,7 +71,7 @@ page 60001 "Interest Calc. Scheme List"
                     ApplicationArea = All;
                     Image = EditList;
                     RunObject = page "Interest Calc. Scheme Lines";
-                    RunPageLink = "Interest Calc. Scheme Code" = field(Code);
+                    RunPageLink = "Interest Calc. Scheme Code" = field("No.");
                 }
                 action(Comment)
                 {
@@ -79,7 +79,7 @@ page 60001 "Interest Calc. Scheme List"
                     ApplicationArea = All;
                     Image = ViewComments;
                     RunObject = page "Comment Sheet";
-                    RunPageLink = "Table Name" = const("Interest Calc. Scheme"), "No." = field(Code);
+                    RunPageLink = "Table Name" = const("Interest Calc. Scheme"), "No." = field("No.");
                 }
             }
         }

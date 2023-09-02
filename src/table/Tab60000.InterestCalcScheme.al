@@ -5,9 +5,9 @@ table 60000 "Interest Calc. Scheme"
 
     fields
     {
-        field(1; Code; Code[20])
+        field(1; "No."; Code[20])
         {
-            Caption = 'Code';
+            Caption = 'No.';
         }
         field(10; Description; Text[50])
         {
@@ -71,20 +71,25 @@ table 60000 "Interest Calc. Scheme"
         {
             Caption = 'Total Duration Years';
             FieldClass = FlowField;
-            CalcFormula = sum("Interest Calc. Scheme Line"."Duration Years" where("Interest Calc. Scheme Code" = field(Code)));
+            CalcFormula = sum("Interest Calc. Scheme Line"."Duration Years" where("Interest Calc. Scheme Code" = field("No.")));
         }
         field(20; "Comment"; Boolean)
         {
             Caption = 'Comment';
             FieldClass = FlowField;
-            CalcFormula = exist("Comment Line" where("Table Name" = const("Interest Calc. Scheme"), "No." = field(Code)));
+            CalcFormula = exist("Comment Line" where("Table Name" = const("Interest Calc. Scheme"), "No." = field("No.")));
             Editable = false;
+        }
+        field(30; "No. Series"; Code[20])
+        {
+            Caption = 'No. Series';
+            TableRelation = "No. Series".Code;
         }
     }
 
     keys
     {
-        key(PK; Code)
+        key(PK; "No.")
         {
             Clustered = true;
         }
@@ -92,7 +97,7 @@ table 60000 "Interest Calc. Scheme"
 
     fieldgroups
     {
-        fieldgroup(DropDown; Code, Description, "Min. Amount", "Max. Amount")
+        fieldgroup(DropDown; "No.", Description, "Min. Amount", "Max. Amount")
         { }
     }
 
@@ -101,10 +106,10 @@ table 60000 "Interest Calc. Scheme"
         InterestCalcSchemeLine: Record "Interest Calc. Scheme Line";
     begin
         CommentLine.SetRange("Table Name", CommentLine."Table Name"::"Interest Calc. Scheme");
-        CommentLine.SetRange("No.", Code);
+        CommentLine.SetRange("No.", "No.");
         CommentLine.DeleteAll();
 
-        InterestCalcSchemeLine.SetRange("Interest Calc. Scheme Code", Rec.Code);
+        InterestCalcSchemeLine.SetRange("Interest Calc. Scheme Code", Rec."No.");
         InterestCalcSchemeLine.DeleteAll();
     end;
 

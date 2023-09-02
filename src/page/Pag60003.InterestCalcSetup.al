@@ -18,6 +18,10 @@ page 60003 "Interest Calc. Setup"
                 {
                     ApplicationArea = All;
                 }
+                field("Int. Calc. Scheme Nos."; Rec."Int. Calc. Scheme Nos.")
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }

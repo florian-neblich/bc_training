@@ -69,7 +69,7 @@ codeunit 60000 "Interest Mgt"
 
         // SetCurrentKey für richtige Sortierung, muss aber nicht verwendet werden ;-)
         InterestCalcSchemeLine.SetCurrentKey("Interest Calc. Scheme Code", "Line No.");
-        InterestCalcSchemeLine.SetRange("Interest Calc. Scheme Code", InterestCalcScheme.Code);
+        InterestCalcSchemeLine.SetRange("Interest Calc. Scheme Code", InterestCalcScheme."No.");
 
         // Lösung über State Machine (Zustandsautomat)
         if InterestCalcSchemeLine.FindSet() then

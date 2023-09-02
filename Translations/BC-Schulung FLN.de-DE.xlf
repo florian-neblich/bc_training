@@ -39,12 +39,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field Blocked - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 3271052804 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Code</source>
-          <target>Code</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field Code - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Table 3271052804 - Field 2790486453 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Comment</source>
           <target>Bemerkung</target>
@@ -70,6 +64,19 @@
           <target>Minimaler Betrag</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field Min. Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3271052804 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <target>Nr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3271052804 - Field 1351594800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Series</source>
+          <target>Nummernserie</target>
+          <target>[NAB: SUGGESTION]Nr.-Serie</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field No. Series - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3271052804 - Field 1180181476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Search Description</source>
@@ -132,6 +139,12 @@
           <target>Code</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Setup - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4279276614 - Field 444829537 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales VAT Advance Notif. Nos.</source>
+          <target>Zinskalkulationsschema Nummern</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Setup - Field Int. Calc. Scheme Nos. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4279276614 - Field 1987066414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Interest Round. Precision</source>

@@ -15,6 +15,11 @@ table 60002 "Interest Calc. Setup"
             Caption = 'Interest Round. Precision';
             InitValue = 0.01;
         }
+        field(10; "Int. Calc. Scheme Nos."; Code[20])
+        {
+            Caption = 'Sales VAT Advance Notif. Nos.';
+            TableRelation = "No. Series".Code;
+        }
     }
 
     keys

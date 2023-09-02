@@ -3,7 +3,7 @@ page 60000 "Interest Calc. Scheme Card"
     PageType = Document;
     UsageCategory = Documents;
     SourceTable = "Interest Calc. Scheme";
-    DataCaptionFields = Code, Description;
+    DataCaptionFields = "No.", Description;
     Caption = 'Interest Calc. Scheme Card';
     RefreshOnActivate = true;
 
@@ -15,14 +15,14 @@ page 60000 "Interest Calc. Scheme Card"
             {
                 Caption = 'General';
 
-                field(Code; Rec.Code)
+                field(Code; Rec."No.")
                 {
                     ApplicationArea = All;
                     Importance = Promoted;
 
                     trigger OnAssistEdit()
                     begin
-                        if Rec.Code <> xRec.Code then
+                        if Rec."No." <> xRec."No." then
                             CurrPage.Update();
                     end;
                 }
@@ -55,7 +55,7 @@ page 60000 "Interest Calc. Scheme Card"
             part("Int.Calc. Scheme Lines Subform"; "Int.Calc. Scheme Lines Subform")
             {
                 Caption = 'Lines';
-                SubPageLink = "Interest Calc. Scheme Code" = field(Code);
+                SubPageLink = "Interest Calc. Scheme Code" = field("No.");
                 UpdatePropagation = Both;
             }
             group(Invoice)
@@ -89,7 +89,7 @@ page 60000 "Interest Calc. Scheme Card"
                     ApplicationArea = All;
                     Image = EditList;
                     RunObject = page "Interest Calc. Scheme Lines";
-                    RunPageLink = "Interest Calc. Scheme Code" = field(Code);
+                    RunPageLink = "Interest Calc. Scheme Code" = field("No.");
                 }
                 action(Comment)
                 {
@@ -97,7 +97,7 @@ page 60000 "Interest Calc. Scheme Card"
                     ApplicationArea = All;
                     Image = ViewComments;
                     RunObject = page "Comment Sheet";
-                    RunPageLink = "Table Name" = const("Interest Calc. Scheme"), "No." = field(Code);
+                    RunPageLink = "Table Name" = const("Interest Calc. Scheme"), "No." = field("No.");
                 }
             }
         }
