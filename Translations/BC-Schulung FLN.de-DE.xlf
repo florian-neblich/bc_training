@@ -255,6 +255,48 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Setup - Control Numbers - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1052285190 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Calculator</source>
+          <target>Zinsrechner</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calculator - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1052285190 - Control 339399652 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calculation Parameter</source>
+          <target>Kalkulationsparameter</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calculator - Control Calculation Parameter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1052285190 - Control 636392376 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount:</source>
+          <target>Betrag:</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calculator - Control Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1052285190 - Control 3592329550 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Calc. Scheme No.:</source>
+          <target>Zinskalkulationsschema Nr.:</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calculator - Control IntCalcSchemeNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1052285190 - Control 3037438984 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date:</source>
+          <target>Buchungsdatum:</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calculator - Control PostingDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1052285190 - Control 472338107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Result</source>
+          <target>Ergebnis</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calculator - Control Result - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1052285190 - Control 323774030 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Amount:</source>
+          <target>Aufgezinster Betrag:</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calculator - Control AmountN - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1496902179 - Action 3878267696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
           <source>Calc. Total Capital</source>
           <target>Gesamtkapital berechnen</target>
