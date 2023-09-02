@@ -203,6 +203,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Setup - Control General - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 4279276614 - Control 2635562404 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Numbers</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calc. Setup - Control Numbers - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1496902179 - Action 3878267696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
           <source>Calc. Total Capital</source>
           <note from="Developer" annotates="general" priority="2"></note>

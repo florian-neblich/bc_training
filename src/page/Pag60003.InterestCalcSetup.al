@@ -25,6 +25,8 @@ page 60003 "Interest Calc. Setup"
             }
             group(Numbers)
             {
+                Caption = 'Numbers';
+
                 field("Int. Calc. Scheme Nos."; Rec."Int. Calc. Scheme Nos.")
                 {
                     ApplicationArea = All;
