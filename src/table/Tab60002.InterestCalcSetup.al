@@ -20,6 +20,10 @@ table 60002 "Interest Calc. Setup"
             Caption = 'Sales VAT Advance Notif. Nos.';
             TableRelation = "No. Series".Code;
         }
+        field(15; "Require Validity"; Boolean)
+        {
+            Caption = 'Validity Required';
+        }
     }
 
     keys
@@ -29,4 +33,9 @@ table 60002 "Interest Calc. Setup"
             Clustered = true;
         }
     }
+
+    procedure GetRequireValidity() IsRequired: Boolean
+    begin
+        IsRequired := Rec."Require Validity";
+    end;
 }

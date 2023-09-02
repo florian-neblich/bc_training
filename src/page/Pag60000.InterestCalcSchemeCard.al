@@ -42,10 +42,13 @@ page 60000 "Interest Calc. Scheme Card"
                 field("Valid From"; Rec."Valid From")
                 {
                     ApplicationArea = All;
+                    ShowMandatory = ShowMandatory;
                 }
-                field("Valid To"; Rec."Valid To")
+                field("Valid To";
+                Rec."Valid To")
                 {
                     ApplicationArea = All;
+                    ShowMandatory = ShowMandatory;
                 }
                 field("Total Duration Years"; Rec."Total Duration Years")
                 {
@@ -102,4 +105,20 @@ page 60000 "Interest Calc. Scheme Card"
             }
         }
     }
+
+    trigger OnOpenPage()
+    begin
+        CheckMandatoryFields();
+    end;
+
+    local procedure CheckMandatoryFields()
+    var
+        InterestCalcSetup: Record "Interest Calc. Setup";
+    begin
+        InterestCalcSetup.Get();
+        ShowMandatory := InterestCalcSetup.GetRequireValidity();
+    end;
+
+    var
+        ShowMandatory: Boolean;
 }

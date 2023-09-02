@@ -148,11 +148,12 @@ table 60000 "Interest Calc. Scheme"
 
     procedure TestDate(PostingDate: Date)
     begin
-        if PostingDate = 0D then
-            PostingDate := WorkDate();
+        InterestCalcSetup.Get();
 
-        if (("Valid From" <> 0D) and (PostingDate < "Valid From")) or (("Valid To" <> 0D) and (PostingDate > "Valid To")) then
-            Error(Text003, "Valid From", "Valid To");
+        if InterestCalcSetup."Require Validity" then begin
+            Rec.TestField("Valid From");
+            Rec.TestField("Valid To");
+        end;
     end;
 
     procedure AssistEdit(OldCalcScheme: Record "Interest Calc. Scheme"): Boolean;

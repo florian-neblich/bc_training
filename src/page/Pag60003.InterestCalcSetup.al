@@ -18,6 +18,13 @@ page 60003 "Interest Calc. Setup"
                 {
                     ApplicationArea = All;
                 }
+                field("Require Validity"; Rec."Require Validity")
+                {
+                    ApplicationArea = All;
+                }
+            }
+            group(Numbers)
+            {
                 field("Int. Calc. Scheme Nos."; Rec."Int. Calc. Scheme Nos.")
                 {
                     ApplicationArea = All;

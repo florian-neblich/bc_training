@@ -152,6 +152,12 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Setup - Field Interest Rounding Precision - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 4279276614 - Field 3046577913 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Validity Required</source>
+          <target>Gültigkeitszeitraum erforderlich</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Setup - Field Require Validity - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Codeunit 930276948 - Method 2469324726 - NamedType 230654827" size-unit="char" translate="yes" xml:space="preserve">
           <source>Unequal count of parameters!</source>
           <target>Ungleiche Anzahl an Parametern!</target>
