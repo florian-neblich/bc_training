@@ -8,6 +8,15 @@ table 60000 "Interest Calc. Scheme"
         field(1; "No."; Code[20])
         {
             Caption = 'No.';
+
+            trigger OnValidate()
+            begin
+                if Rec."No." <> xRec."No." then begin
+                    IntCalcScheme.Get();
+                    NoSeriesMgt.TestManual(IntCalcScheme."No.");
+                    "No. Series" := '';
+                end;
+            end;
         }
         field(10; Description; Text[50])
         {
@@ -113,6 +122,15 @@ table 60000 "Interest Calc. Scheme"
         InterestCalcSchemeLine.DeleteAll();
     end;
 
+    trigger OnInsert()
+    begin
+        if Rec."No." = '' then begin
+            InterestCalcSetup.Get();
+            InterestCalcSetup.TestField("Int. Calc. Scheme Nos.");
+            NoSeriesMgt.InitSeries(InterestCalcSetup."Int. Calc. Scheme Nos.", xRec."No. Series", 0D, "No.", "No. Series");
+        end;
+    end;
+
     procedure TestBlocked()
     begin
         // if Blocked then
@@ -137,8 +155,25 @@ table 60000 "Interest Calc. Scheme"
             Error(Text003, "Valid From", "Valid To");
     end;
 
+    procedure AssistEdit(OldCalcScheme: Record "Interest Calc. Scheme"): Boolean;
+    VAR
+        IntCalcScheme: Record "Interest Calc. Scheme";
+    begin
+        IntCalcScheme := Rec;
+        InterestCalcSetup.Get();
+        InterestCalcSetup.TestField("Int. Calc. Scheme Nos.");
+        if NoSeriesMgt.SelectSeries(InterestCalcSetup."Int. Calc. Scheme Nos.", OldCalcScheme."No. Series", "No. Series") then begin
+            NoSeriesMgt.SetSeries("No.");
+            Rec := IntCalcScheme;
+            exit(true);
+        end;
+    end;
+
     var
         CommentLine: Record "Comment Line";
+        IntCalcScheme: Record "Interest Calc. Scheme";
+        InterestCalcSetup: Record "Interest Calc. Setup";
+        NoSeriesMgt: Codeunit NoSeriesManagement;
         Text000: Label 'must not be greater than %1!';
         Text001: Label 'must not be less than %1!';
         Text002: Label 'The Amound is not within the range of allowed amounts %1..%2';

@@ -15,14 +15,14 @@ page 60000 "Interest Calc. Scheme Card"
             {
                 Caption = 'General';
 
-                field(Code; Rec."No.")
+                field("No."; Rec."No.")
                 {
                     ApplicationArea = All;
                     Importance = Promoted;
 
                     trigger OnAssistEdit()
                     begin
-                        if Rec."No." <> xRec."No." then
+                        if Rec.AssistEdit(xRec) then
                             CurrPage.Update();
                     end;
                 }
@@ -102,7 +102,4 @@ page 60000 "Interest Calc. Scheme Card"
             }
         }
     }
-
-    var
-        myInt: Integer;
 }
