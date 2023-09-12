@@ -5,6 +5,7 @@ page 60002 "Int.Calc. Scheme Lines Subform"
     AutoSplitKey = true;
     DelayedInsert = true;
     ShowFilter = false;
+    LinksAllowed = false;
     Caption = 'Interest Calc. Scheme Line';
 
     layout

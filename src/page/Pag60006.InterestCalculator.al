@@ -29,6 +29,12 @@ page 60006 "Interest Calculator"
                             trigger OnValidate()
                             begin
                                 CalcAmount(IntCalcSchemeNo, Amount, PostingDate);
+                                ShowLines := false;
+                                if IntCalcSchemeNo <> '' then begin
+                                    SetCurrCalcSchemeFilter();
+                                    ShowLines := true;
+                                    CurrPage.Update();
+                                end;
                             end;
                         }
 
@@ -74,6 +80,12 @@ page 60006 "Interest Calculator"
                     }
                 }
             }
+            part(IntCalcSchemeLinesSub; "Int.Calc. Scheme Lines Subform")
+            {
+                Caption = 'Interest Calc. Scheme Lines';
+                ApplicationArea = All;
+                Visible = ShowLines;
+            }
         }
     }
 
@@ -82,10 +94,20 @@ page 60006 "Interest Calculator"
         AmountN := InterestMgt.CalcScheme(piIntCalcSchemeNo, piAmount, piPostingDate);
     end;
 
+    local procedure SetCurrCalcSchemeFilter()
+    begin
+        IntCalcSchemeLine.SetRange("Interest Calc. Scheme Code", IntCalcSchemeNo);
+        if IntCalcSchemeLine.FindSet() then
+            IntCalcSchemeLinesSub.SetTableView(IntCalcSchemeLine);
+    end;
+
     var
+        IntCalcSchemeLine: Record "Interest Calc. Scheme Line";
         InterestMgt: Codeunit "Interest Mgt";
+        "IntCalcSchemeLinesSub": Page "Int.Calc. Scheme Lines Subform";
         IntCalcSchemeNo: Code[20];
         Amount: Decimal;
         AmountN: Decimal;
         PostingDate: Date;
+        ShowLines: Boolean;
 }

@@ -233,6 +233,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calculator - Control PostingDate - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1052285190 - Control 3146694502 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Calc. Scheme Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Interest Calculator - Control IntCalcSchemeLinesSub - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1052285190 - Control 472338107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Result</source>
           <note from="Developer" annotates="general" priority="2"></note>
