@@ -297,6 +297,5 @@ permissionsAnalyzer.json
 **/doc/*.pdf
 **/doc/*.md
 
-.alpackages
 .alcache
 .snapshots
