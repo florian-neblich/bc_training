@@ -163,6 +163,12 @@ table 60000 "Interest Calc. Scheme"
             Rec.TestField("Valid From");
             Rec.TestField("Valid To");
         end;
+
+        if PostingDate = 0D then
+            PostingDate := WorkDate();
+
+        if ((Rec."Valid From" <> 0D) and (PostingDate < Rec."Valid From")) or ((Rec."Valid To" <> 0D) and (PostingDate > "Valid To")) then
+            Error(Text003, "Valid From", "Valid To");
     end;
 
     procedure AssistEdit(OldCalcScheme: Record "Interest Calc. Scheme"): Boolean;
