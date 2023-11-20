@@ -12,8 +12,10 @@ tableextension 60001 "Sales Header Ext." extends "Sales Header"
                 TestStatusOpen();
 
                 if Rec."Interest Calc. Scheme No." <> xRec."Interest Calc. Scheme No." then begin
-                    if not TestInterestCalculation(false) then
-                        InterestCalcScheme.Init();
+                    if "Interest Calc. Scheme No." = '' then
+                        InterestCalcScheme.Init()
+                    else
+                        TestInterestCalculation(false);
 
                     Rec."Interest Calc. Description" := InterestCalcScheme.Description;
                     Rec."Valid From" := InterestCalcScheme."Valid From";
@@ -73,7 +75,7 @@ tableextension 60001 "Sales Header Ext." extends "Sales Header"
     procedure TestInterestCalculation(TestAmount: Boolean): Boolean
     begin
         if Rec."Interest Calc. Scheme No." = '' then
-            exit(false);
+            exit(true);
 
         if InterestCalcScheme."No." <> Rec."Interest Calc. Scheme No." then
             InterestCalcScheme.Get(Rec."Interest Calc. Scheme No.");
