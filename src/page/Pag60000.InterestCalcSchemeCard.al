@@ -113,6 +113,11 @@ page 60000 "Interest Calc. Scheme Card"
         CheckMandatoryFields();
     end;
 
+    trigger OnAfterGetCurrRecord()
+    begin
+        CheckMandatoryFields();
+    end;
+
     local procedure CheckMandatoryFields()
     var
         InterestCalcSetup: Record "Interest Calc. Setup";
