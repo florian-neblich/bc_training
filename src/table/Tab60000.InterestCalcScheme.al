@@ -112,8 +112,14 @@ table 60000 "Interest Calc. Scheme"
 
     trigger OnDelete()
     var
+        SalesHeader: Record "Sales Header";
         InterestCalcSchemeLine: Record "Interest Calc. Scheme Line";
     begin
+        // SalesHeader.SetRange("Document Type", SalesHeader."Document Type"::Order);
+        SalesHeader.SetRange("Interest Calc. Scheme No.", Rec."No.");
+        if SalesHeader.FindFirst() then
+            Error(Text004, SalesHeader.TableCaption, SalesHeader."No.", SalesHeader."Document Type", TableCaption);
+
         CommentLine.SetRange("Table Name", CommentLine."Table Name"::"Interest Calc. Scheme");
         CommentLine.SetRange("No.", "No.");
         CommentLine.DeleteAll();
@@ -179,5 +185,5 @@ table 60000 "Interest Calc. Scheme"
         Text001: Label 'must not be less than %1!';
         Text002: Label 'The Amound is not within the range of allowed amounts %1..%2';
         Text003: Label 'The Date ist not within the range of allowed dates %1..%2.';
-
+        Text004: Label 'You cannot delete %1 %2 because there is at least one outstanding Sales %3 for this %4.';
 }
