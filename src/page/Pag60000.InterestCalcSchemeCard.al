@@ -84,6 +84,7 @@ page 60000 "Interest Calc. Scheme Card"
 
                 action(InterestCalcSchemeLine)
                 {
+                    Caption = 'Interest Calc. Scheme Lines';
                     ApplicationArea = All;
                     Image = EditList;
                     RunObject = page "Interest Calc. Scheme Lines";
