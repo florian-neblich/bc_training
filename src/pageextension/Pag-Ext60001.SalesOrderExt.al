@@ -12,6 +12,33 @@ pageextension 60001 "Sales Order Ext." extends "Sales Order"
                 {
                     ApplicationArea = All;
                     Importance = Promoted;
+
+                    trigger OnLookup(var Text: Text): Boolean
+                    var
+                        InterestCalcScheme: Record "Interest Calc. Scheme";
+                        InterestCalcSchemeList: Page "Interest Calc. Scheme List";
+                    begin
+                        Rec.TestStatusOpen();
+
+                        InterestCalcScheme.FilterGroup(2);
+
+                        InterestCalcScheme.SetRange(Blocked, false);
+                        InterestCalcScheme.SetCurrentKey("Max. Amount");
+                        InterestCalcScheme.Ascending(true);
+
+                        InterestCalcSchemeList.SetTableView(InterestCalcScheme);
+                        InterestCalcSchemeList.SetRecord(InterestCalcScheme);
+                        InterestCalcSchemeList.Editable(false);
+                        InterestCalcSchemeList.LookupMode(true);
+
+                        if InterestCalcSchemeList.RunModal = Action::LookupOK then begin
+                            InterestCalcSchemeList.GetRecord(InterestCalcScheme);
+                            Rec.Validate("Interest Calc. Scheme No.", InterestCalcScheme."No.");
+                        end;
+
+                        InterestCalcSchemeList.LookupMode(false);
+                        InterestCalcSchemeList.Editable(true);
+                    end;
                 }
                 field("Interest Calc. Description"; Rec."Interest Calc. Description")
                 {

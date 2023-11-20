@@ -102,6 +102,9 @@ table 60000 "Interest Calc. Scheme"
         {
             Clustered = true;
         }
+        key(MaxAmount; "Max. Amount")
+        {
+        }
     }
 
     fieldgroups
