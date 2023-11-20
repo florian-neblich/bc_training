@@ -59,6 +59,34 @@ pageextension 60001 "Sales Order Ext." extends "Sales Order"
         }
     }
 
+    actions
+    {
+        addlast(processing)
+        {
+            action(OpenInterestCalculator)
+            {
+                Caption = 'Calc. Total Capital';
+                ApplicationArea = All;
+                Image = CalculateDiscount;
+                Promoted = true;
+                PromotedCategory = Process;
+                Enabled = CalculatorForOrderEnabled;
+
+                trigger OnAction()
+                var
+                    InterstCalculator: Page "Interest Calculator";
+                begin
+                    InterstCalculator.SetInterestCalcSchemeNo(Rec."Interest Calc. Scheme No.");
+                    Rec.CalcFields("Amount Including VAT");
+                    InterstCalculator.SetInterestAmount(Rec."Amount Including VAT");
+                    InterstCalculator.SetInterestPostingDate(Rec."Order Date");
+
+                    InterstCalculator.Run();
+                end;
+            }
+        }
+    }
+
     local procedure SetRequireValidityMandatoryCondition()
     var
         InterestCalcSetup: Record "Interest Calc. Setup";
@@ -68,16 +96,31 @@ pageextension 60001 "Sales Order Ext." extends "Sales Order"
         RequireValidityMandatory := InterestCalcSetup.GetRequireValidity();
     end;
 
+    local procedure SetCalculatorForOrderEnabled()
+    begin
+        CalculatorForOrderEnabled := false;
+        if Rec."Interest Calc. Scheme No." <> '' then
+            CalculatorForOrderEnabled := true;
+    end;
+
     trigger OnOpenPage()
     begin
         SetRequireValidityMandatoryCondition();
+        SetCalculatorForOrderEnabled();
     end;
 
     trigger OnAfterGetCurrRecord()
     begin
         SetRequireValidityMandatoryCondition();
+        SetCalculatorForOrderEnabled();
+    end;
+
+    trigger OnModifyRecord(): Boolean
+    begin
+        SetCalculatorForOrderEnabled();
     end;
 
     var
         RequireValidityMandatory: Boolean;
+        CalculatorForOrderEnabled: Boolean;
 }

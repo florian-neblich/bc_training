@@ -101,6 +101,21 @@ page 60006 "Interest Calculator"
             IntCalcSchemeLinesSub.SetTableView(IntCalcSchemeLine);
     end;
 
+    procedure SetInterestCalcSchemeNo(piIntCalcSchemeNo: Code[20])
+    begin
+        IntCalcSchemeNo := piIntCalcSchemeNo;
+    end;
+
+    procedure SetInterestAmount(piAmount: Decimal)
+    begin
+        Amount := piAmount;
+    end;
+
+    procedure SetInterestPostingDate(piPostingDate: Date)
+    begin
+        PostingDate := piPostingDate;
+    end;
+
     var
         IntCalcSchemeLine: Record "Interest Calc. Scheme Line";
         InterestMgt: Codeunit "Interest Mgt";
