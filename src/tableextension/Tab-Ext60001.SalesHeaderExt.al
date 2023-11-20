@@ -6,6 +6,21 @@ tableextension 60001 "Sales Header Ext." extends "Sales Header"
         {
             Caption = 'Interese Calc. Scheme Code';
             TableRelation = "Interest Calc. Scheme";
+
+            trigger OnValidate()
+            begin
+                TestStatusOpen();
+
+                if InterestCalcScheme.Get(Rec."Interest Calc. Scheme No.") then begin
+                    Rec."Interest Calc. Description" := InterestCalcScheme.Description;
+                    Rec."Valid From" := InterestCalcScheme."Valid From";
+                    Rec."Valid To" := InterestCalcScheme."Valid To";
+                end else begin
+                    Rec."Interest Calc. Description" := '';
+                    Rec."Valid From" := 0D;
+                    Rec."Valid To" := 0D;
+                end;
+            end;
         }
         field(60001; "Interest Calc. Description"; Text[50])
         {
