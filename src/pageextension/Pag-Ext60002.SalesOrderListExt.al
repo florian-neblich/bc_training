@@ -1,5 +1,17 @@
 pageextension 60002 "Sales Order List Ext." extends "Sales Order List"
 {
+    layout
+    {
+        addafter(Control1900316107)
+        {
+            part(InterestCalcFactBox; "Interest Calc. FactBox")
+            {
+                ApplicationArea = All;
+                Caption = 'Interest Calc. Details';
+                SubPageLink = "No." = field("Interest Calc. Scheme No.");
+            }
+        }
+    }
     actions
     {
         addlast(processing)

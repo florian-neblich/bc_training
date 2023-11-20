@@ -57,6 +57,16 @@ pageextension 60001 "Sales Order Ext." extends "Sales Order"
                 }
             }
         }
+
+        addafter(Control1900316107)
+        {
+            part(InterestCalcFactBox; "Interest Calc. FactBox")
+            {
+                ApplicationArea = All;
+                Caption = 'Interest Calc. Details';
+                SubPageLink = "No." = field("Interest Calc. Scheme No.");
+            }
+        }
     }
 
     actions
