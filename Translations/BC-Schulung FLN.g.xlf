@@ -133,6 +133,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Setup - Field Require Validity - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Codeunit 2555704305 - Method 1898112875 - NamedType 230654827" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest scheme could not be validated!</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Interest Event Mgmt. - Method OnBeforeReleaseSalesDoc - NamedType Error001</note>
+        </trans-unit>
         <trans-unit id="Codeunit 930276948 - Method 2469324726 - NamedType 230654827" size-unit="char" translate="yes" xml:space="preserve">
           <source>Unequal count of parameters!</source>
           <note from="Developer" annotates="general" priority="2"></note>

@@ -11,15 +11,24 @@ tableextension 60001 "Sales Header Ext." extends "Sales Header"
             begin
                 TestStatusOpen();
 
-                if InterestCalcScheme.Get(Rec."Interest Calc. Scheme No.") then begin
+                if Rec."Interest Calc. Scheme No." <> xRec."Interest Calc. Scheme No." then begin
+                    if not TestInterestCalculation(false) then
+                        InterestCalcScheme.Init();
+
                     Rec."Interest Calc. Description" := InterestCalcScheme.Description;
                     Rec."Valid From" := InterestCalcScheme."Valid From";
                     Rec."Valid To" := InterestCalcScheme."Valid To";
-                end else begin
-                    Rec."Interest Calc. Description" := '';
-                    Rec."Valid From" := 0D;
-                    Rec."Valid To" := 0D;
                 end;
+
+                // if InterestCalcScheme.Get(Rec."Interest Calc. Scheme No.") then begin
+                //     Rec."Interest Calc. Description" := InterestCalcScheme.Description;
+                //     Rec."Valid From" := InterestCalcScheme."Valid From";
+                //     Rec."Valid To" := InterestCalcScheme."Valid To";
+                // end else begin
+                //     Rec."Interest Calc. Description" := '';
+                //     Rec."Valid From" := 0D;
+                //     Rec."Valid To" := 0D;
+                // end;
             end;
         }
         field(60001; "Interest Calc. Description"; Text[50])
@@ -60,6 +69,23 @@ tableextension 60001 "Sales Header Ext." extends "Sales Header"
             end;
         }
     }
+
+    procedure TestInterestCalculation(TestAmount: Boolean): Boolean
+    begin
+        if Rec."Interest Calc. Scheme No." = '' then
+            exit(false);
+
+        if InterestCalcScheme."No." <> Rec."Interest Calc. Scheme No." then
+            InterestCalcScheme.Get(Rec."Interest Calc. Scheme No.");
+
+        InterestCalcScheme.TestBlocked();
+        InterestCalcScheme.TestDate("Order Date");
+
+        if TestAmount then
+            InterestCalcScheme.TestAmount("Amount Including VAT");
+
+        exit(true);
+    end;
 
     var
         InterestCalcScheme: Record "Interest Calc. Scheme";
