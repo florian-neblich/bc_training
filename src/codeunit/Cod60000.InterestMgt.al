@@ -1,6 +1,6 @@
 codeunit 60000 "Interest Mgt"
 {
-    procedure CalcInterest(Amount: Decimal; CalcDuration: Integer; InterestRate: Decimal) AmountN: Decimal
+    local procedure CalcInterest(Amount: Decimal; CalcDuration: Integer; InterestRate: Decimal) AmountN: Decimal
     var
         I: Integer;
     begin
@@ -10,21 +10,29 @@ codeunit 60000 "Interest Mgt"
             AmountN := AmountN + Round(AmountN * InterestRate / 100);
     end;
 
-
-    // THIS FUNCTION WE DO NOT USE AGAIN!!!!!!!!
-    procedure CalcInterestWithArray(Amount: Decimal; DurationYears: array[2] of Integer; InterestPercent: array[2] of Decimal) AmountN: Decimal
+    local procedure CalcInterestArray(Amount: Decimal; DurationYears: array[1] of Integer; InterestPercent: array[1] of Decimal) AmountN: Decimal
     var
         I: Integer;
+        Error001: Label 'Unequal count of parameters!';
     begin
+        if ArrayLen(DurationYears) <> ArrayLen(InterestPercent) then
+            Error(Error001);
+
         AmountN := Amount;
 
-        for I := 1 to ArrayLen(DurationYears) do
+        FOR I := 1 TO Step DO
             AmountN := CalcInterest(AmountN, DurationYears[I], InterestPercent[I]);
     end;
 
     local procedure ClearSteps()
     begin
         Step := 0;
+    end;
+
+    procedure CalcSteps(Amount: Decimal) AmountN: Decimal
+    begin
+        AmountN := CalcInterestArray(Amount, DurationYears, InterestPercent);
+        ClearSteps();
     end;
 
     procedure AddStep(DurationYears2: Integer; InterestPercent2: Decimal)
@@ -34,20 +42,18 @@ codeunit 60000 "Interest Mgt"
         InterestPercent[Step] := InterestPercent2;
     end;
 
-    procedure CalcSteps(Amount: Decimal) AmountN: Decimal
-    begin
-        AmountN := Amount;
-        AmountN := CalcInterestArray(AmountN, DurationYears, InterestPercent);
-        ClearSteps();
-    end;
-
-    procedure CalcInterestArray(Amount: Decimal; DurationYears: array[1] of Integer; InterestPercent: array[1] of Decimal) AmountN: Decimal
+    /* UNUSED FUNCTION */
+    local procedure CalcInterestWithArray(Amount: Decimal; DurationYears: array[2] of Integer; InterestPercent: array[2] of Decimal) AmountN: Decimal
     var
         I: Integer;
+        Error001: Label 'Unequal count of parameters!';
     begin
+        if ArrayLen(DurationYears) <> ArrayLen(InterestPercent) then
+            Error(Error001);
+
         AmountN := Amount;
 
-        for I := 1 to Step do
+        for I := 1 to ArrayLen(DurationYears) do
             AmountN := CalcInterest(AmountN, DurationYears[I], InterestPercent[I]);
     end;
 

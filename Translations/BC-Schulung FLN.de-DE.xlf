@@ -3,6 +3,123 @@
   <file datatype="xml" source-language="en-US" target-language="de-DE" original="BC-Schulung FLN.g.xlf">
     <body>
       <group id="body">
+        <trans-unit id="Table 3271052804 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Calc. Scheme</source>
+          <target>Zinskalkulationsschema</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3271052804 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>must not be greater than %1!</source>
+          <target>darf nicht größer als %1 sein!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Table 3271052804 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>must not be less than %1!</source>
+          <target>darf nicht kleiner sein als %1!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Table 3271052804 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Amound is not within the range of allowed amounts %1..%2</source>
+          <target>Der Betrag liegt außerhalb des zulässigen Bereiches %1 ..%2!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Table 3271052804 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Date ist not within the range of allowed dates %1..%2.</source>
+          <target>Das Datum liegt außerhalb des zulässigen Bereiches %1 ..%2!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - NamedType Text003</note>
+        </trans-unit>
+        <trans-unit id="Table 3271052804 - Field 3543129988 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Blocked</source>
+          <target>Gesperrt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field Blocked - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3271052804 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target>Code</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3271052804 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beschreibung</target>
+          <target>[NAB: SUGGESTION]Description</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3271052804 - Field 2675841586 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max. Amount</source>
+          <target>Maximaler Betrag</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field Max. Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3271052804 - Field 1834992572 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Min. Amount</source>
+          <target>Minimaler Betrag</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field Min. Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3271052804 - Field 1180181476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Search Description</source>
+          <target>Suchbegriff</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field Search Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3271052804 - Field 1771795884 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Valid From</source>
+          <target>Gültigkeit ab</target>
+          <target>[NAB: SUGGESTION]Gültig ab</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field Valid From - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3271052804 - Field 413958159 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Valid To</source>
+          <target>Gültig bis</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme - Field Valid To - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3513049618 - Field 3329930854 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Duration Years</source>
+          <target>Laufzeit (Jahre)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme Line - Field Duration Years - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3513049618 - Field 3523703391 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Calc. Scheme Code</source>
+          <target>Zinsrechner Schema Code</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme Line - Field Interest Calc. Scheme Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3513049618 - Field 3083133727 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Percent</source>
+          <target>Zinssatz</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme Line - Field Interest Percent - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3513049618 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <target>Zeilennr.</target>
+          <target>[NAB: SUGGESTION]Lfd. Nr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Interest Calc. Scheme Line - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 930276948 - Method 2469324726 - NamedType 230654827" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unequal count of parameters!</source>
+          <target>Ungleiche Anzahl an Parametern!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Interest Mgt - Method CalcInterestArray - NamedType Error001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 930276948 - Method 1384013020 - NamedType 230654827" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unequal count of parameters!</source>
+          <target>Ungleiche Anzahl an Parametern!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Interest Mgt - Method CalcInterestWithArray - NamedType Error001</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1496902179 - Action 3878267696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
           <source>Calc. Total Capital</source>
           <target>Gesamtkapital berechnen</target>

@@ -15,6 +15,8 @@ pageextension 60000 CustomerCardExt extends "Customer Card"
                     GenLedgerSetup: Record "General Ledger Setup";
                     InterestMgt: Codeunit "Interest Mgt";
                     TotalCapital: Decimal;
+                    DurationYears: array[2] of Integer;
+                    InterestPercent: array[2] of Decimal;
                     Text60000: Label 'Total amount: %1 MW';
                 begin
                     GenLedgerSetup.Get();
